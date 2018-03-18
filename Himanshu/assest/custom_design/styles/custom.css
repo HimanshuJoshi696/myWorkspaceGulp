@@ -1,0 +1,14 @@
+.nav-howto-home {
+    display: none
+}
+.home-banner .progress-path-count{
+    width: 38px; 
+    height: 38px;
+    font-size: 200%;
+}
+
+@media (min-width: 1200px) {
+    .nav-howto-home {
+        display: inline-block
+    }
+}

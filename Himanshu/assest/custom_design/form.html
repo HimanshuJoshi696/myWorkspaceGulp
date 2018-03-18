@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Medikit - Base</title>
+    <link href="./design/styles/bundle.css" rel="stylesheet">
+</head>
+<style>
+    .errormsg{display: none; color:red;}
+</style>
+<body>
+    <div class="example">
+        <div class="container m-t-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <label for="exampleTextInput">First Name</label>
+                        <input type="text" id="userFirstName" aria-describedby="inputHelp" class="input-text">
+                        <span class="errormsg" id="errorrFirstName">Please Enter First Name</span>
+                     </div>
+                    <div class="input-group">
+                        <label for="exampleTextInput">Last Name.</label>
+                        <input type="text" id="userLastName" aria-describedby="inputHelp" class="input-text">
+                        <span class="errormsg" id="errorrLastName">Please Enter Last Name</span>
+                    </div>
+                   
+                    <div class="input-group">
+                        <label for="exampleEmailInput">Email input</label>
+                        <input type="email" id="userEmail" aria-describedby="emailHelp" class="input-text">
+                        <span class="errormsg" id="errorrEmail">Please Enter email</span>
+                    </div>
+                    
+                    <div class="input-group input-with-icon-right">
+                        <label for="password">Password input</label><input type="password" id="userPassword" class="input-password"> <button type="button" class="btn btn-inline btn-sm js-toggle-password">Show</button> 
+                        <svg class="icon icon-fill text-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path class="currentColor" d="M5.8 7.5V5.8c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2v1.6H5.8zm7.1.8c0-.5-.4-.8-.8-.8h-.3V5.8C11.8 3.7 10.1 2 8 2S4.2 3.7 4.2 5.8v1.6H4c-.4 0-.8.4-.8.8v4.9c-.1.5.3.9.8.9h8c.4 0 .8-.4.8-.8V8.3z"></path>
+                        </svg>
+                        <span class="errormsg" id="errorrFirstPassword">Please Enter Password</span>
+                    </div>
+                    <button class="btn btn-dark" id="submitUserFields">Submit</button>
+                    <button class="btn btn-dark" id="clearUserFields">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./design/scripts/bundle.js"></script>
+    <script src="./design/scripts/form.js"></script>    
+</body>
+
+</html>
